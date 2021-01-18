@@ -1,9 +1,0 @@
-name: tests-payments
-on:
-  pull_request:
-jobs:
-  build:
-    runs-on: ubunto-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: cd payments && npm insatall && npm run test:ci
