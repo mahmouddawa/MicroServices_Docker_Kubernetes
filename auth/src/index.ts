@@ -5,6 +5,7 @@ import  mongoose  from 'mongoose' ;
 const start = async()=>{
   if(!process.env.JWT_KEY){
     console.log("testing again asd");
+    console.log("testing again asd");
     throw Error('JWT_KEY must be defined');
   }
   if(!process.env.MONGO_URI){
