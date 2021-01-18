@@ -3,6 +3,7 @@ import  mongoose  from 'mongoose' ;
 
 
 const start = async()=>{
+  console.log("testing the git");
   if(!process.env.JWT_KEY){
     console.log("testing again");
     throw Error('JWT_KEY must be defined');
