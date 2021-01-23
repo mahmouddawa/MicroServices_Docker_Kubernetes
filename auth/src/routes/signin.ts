@@ -27,6 +27,7 @@ router.post('/api/users/signin',[
      }
      const passwordMatch = await Password.compare(existingUser.password, password);
      if(!passwordMatch){
+        console.log('testing the git action');
          throw new BadRequestError('Invalid credentials ')
      }
     //generate JWT 
